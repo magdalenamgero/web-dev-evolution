@@ -25,7 +25,6 @@ export const TIMELINE_DATA = {
       title: "Birth of HTML",
       text: "Tim Berners-Lee creates the first version of HTML.",
       image: "/images/html-headings.png",
-      code: "<h1>Hello World</h1>",
     },
     {
       year: "1995",
@@ -37,6 +36,7 @@ export const TIMELINE_DATA = {
       year: "1997",
       title: "HTML 3.2",
       text: "Tables, applets, layout improvements...",
+      image: "/images/html-as-div.jpg",
     },
   ],
   css: [
