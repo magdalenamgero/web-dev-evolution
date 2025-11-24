@@ -11,6 +11,13 @@
 .logo {
   font-weight: bold;
   font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--blue);
+
+  &:hover {
+    color: var(--beige);
+    transition: color 0.2s;
+  }
 }
 
 .nav {
@@ -26,7 +33,7 @@
 }
 
 .nav a:hover {
-  color: var(--yellow); // or any accent color you prefer
+  color: var(--yellow);
 }
 
 .hamburger {
@@ -47,7 +54,6 @@
   }
 }
 
-/* Responsive styles */
 @media (max-width: 600px) {
   .nav {
     position: absolute;

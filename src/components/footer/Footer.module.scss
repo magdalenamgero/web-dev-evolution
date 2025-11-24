@@ -5,3 +5,14 @@
   text-align: center;
   margin-top: 4rem;
 }
+
+.link {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+}

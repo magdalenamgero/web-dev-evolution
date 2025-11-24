@@ -4,7 +4,6 @@ import styles from "./page.module.scss";
 import { MAIN_CARDS } from "@/data/content";
 
 export default function Home() {
-  console.log(styles.cardLink);
   return (
     <main className={styles.main}>
       <h1 className={styles.title}>Welcome to Web Development</h1>

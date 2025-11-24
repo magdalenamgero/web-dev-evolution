@@ -7,21 +7,27 @@ import { useState } from "react";
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // const toggleMenu = () => {
-  //   setIsOpen(!isOpen);
-  // };
-
   function setMenuOpen(updater: (open: boolean) => boolean): void {
     setIsOpen(updater);
   }
   return (
     <header className={styles.header}>
-      <h2>Web Dev Evolution</h2>
+      <Link href="/" className={styles.logo}>
+        Web Dev Evolution
+      </Link>
       <nav className={`${styles.nav} ${isOpen ? styles.open : ""}`}>
-        <Link href="/">Home</Link>
-        <Link href="/html">HTML</Link>
-        <Link href="/css">CSS</Link>
-        <Link href="/javascript">JavaScript</Link>
+        <Link href="/" className={styles.navLink}>
+          Home
+        </Link>
+        <Link href="/html" className={styles.navLink}>
+          HTML
+        </Link>
+        <Link href="/css" className={styles.navLink}>
+          CSS
+        </Link>
+        <Link href="/javascript" className={styles.navLink}>
+          JavaScript
+        </Link>
       </nav>
       <button
         className={styles.hamburger}

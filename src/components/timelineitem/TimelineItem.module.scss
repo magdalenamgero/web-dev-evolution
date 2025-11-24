@@ -12,7 +12,9 @@
   cursor: pointer;
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease;
+    box-shadow 0.2s ease,
+    background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
   min-width: 140px;
   text-align: center;
@@ -20,16 +22,16 @@
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    background-color: var(--darkorange);
+    color: var(--blue);
   }
 }
 
-/* YEAR NUMBER */
 .year {
   font-size: 1.3rem;
   font-weight: 700;
 }
 
-/* TITLE TEXT */
 .label {
   font-size: 0.95rem;
   opacity: 0.8;
