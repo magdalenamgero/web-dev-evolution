@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+**Web Dev Evolution — Technical Summary**
 
-## Getting Started
+This project demonstrates how core web technologies (HTML, CSS, JavaScript) work together inside a modern stack using React, Next.js, TypeScript, and SCSS.
 
-First, run the development server:
+**_🟦 HTML_**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+HTML defines the structure and semantics of a webpage. It forms the DOM tree that React ultimately renders.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Key concepts:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    Structural elements: div, header, section, footer
+    
+    Semantics improve accessibility & SEO
+    
+    Forms, media, lists, and text elements
+    
+    DOM = browser’s representation of HTML
+    
+    Role in this project
+    
+    JSX is compiled into HTML DOM nodes
+    
+    Components map to HTML elements under the hood
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+**_🟩 CSS_**
 
-To learn more about Next.js, take a look at the following resources:
+CSS controls appearance, layout, and responsive behavior.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Key concepts:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    Box model, specificity, cascade
+    
+    Flexbox and Grid for modern layout
+    
+    Responsive units and media queries
+    
+    Transitions and animations
+    
+    Role in this project
+    
+    Styling done via SCSS modules
+    
+    Styles are scoped per component
+    
+    Variables, nesting, and modular structure
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**_🟨 JavaScript_**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+JavaScript powers behavior, state, and dynamic updates.
+
+Key concepts:
+
+Variables, data types, arrays, objects
+
+Functions & arrow functions
+
+Events and DOM interaction
+
+Async/await and fetch
+
+Modules (import/export)
+
+
+**Stack Overview**
+
+**_React_**
+
+- Component-based UI
+
+- Virtual DOM
+
+JSX bridges JS + HTML
+
+**_Next.js_**
+
+- App routing
+
+- Server Actions
+
+- Server/Client components
+
+- Optimized bundling
+
+**_TypeScript_**
+
+- Static types
+
+- Safer components & validation
+
+- Better tooling and autocompletion
+
+**_SCSS_**
+
+- Component-scoped styling
+
+- Nesting, variables, cleaner structure
+
+
+This stack mirrors real-world industry practices and shows how fundamental web technologies evolve into full applications.
