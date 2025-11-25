@@ -46,6 +46,7 @@
 .nav {
   display: flex;
   gap: 2rem;
+  padding: 5px;
 }
 
 .nav a {
@@ -54,6 +55,7 @@
   font-weight: 500;
   position: relative;
   transition: color 0.2s;
+  margin: 0 5px;
 
   &::after {
     content: "";

@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import styles from "./ModalBox.module.scss";
 import { useState } from "react";
-
 export default function ModalBox({
   title,
   text,

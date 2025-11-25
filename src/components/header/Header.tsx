@@ -3,21 +3,41 @@
 import Link from "next/link";
 import styles from "./Header.module.scss";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const navRef = useRef<HTMLDivElement>(null);
 
   function setMenuOpen(updater: (open: boolean) => boolean): void {
     setIsOpen(updater);
   }
+
+  const handleClickOutside = (event: Event) => {
+    if (navRef.current && !navRef.current.contains(event.target as Node)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("touchstart", handleClickOutside); // For touch devices
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header className={styles.header}>
       <Link href="/" className={styles.logo}>
         Web Dev Evolution
       </Link>
-      <nav className={`${styles.nav} ${isOpen ? styles.open : ""}`}>
+      <nav
+        ref={navRef}
+        className={`${styles.nav} ${isOpen ? styles.open : ""}`}
+      >
         <Link
           href="/"
           className={`${styles.navLink} ${pathname === "/" ? styles.active : ""}`}
