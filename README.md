@@ -1,10 +1,10 @@
-deployed website: https://web-dev-presentation-website.vercel.app
+deployed website: https://web-dev-evolution-emk3.vercel.app/
 
-**Web Dev Evolution — Technical Summary**
+**Web Dev Evolution - Technical Summary**
 
 This project demonstrates how core web technologies (HTML, CSS, JavaScript) work together inside a modern stack using React, Next.js, TypeScript, and SCSS.
 
-**_🟦 HTML_**
+🟦 **HTML**
 
 HTML defines the structure and semantics of a webpage. It forms the DOM tree that React ultimately renders.
 
@@ -24,7 +24,7 @@ Key concepts:
 
     Components map to HTML elements under the hood
 
-**_🟩 CSS_**
+🟩 **CSS**
 
 CSS controls appearance, layout, and responsive behavior.
 
@@ -46,21 +46,21 @@ Key concepts:
 
     Variables, nesting, and modular structure
 
-**_🟨 JavaScript_**
+🟨 **JavaScript**
 
 JavaScript powers behavior, state, and dynamic updates.
 
 Key concepts:
 
-Variables, data types, arrays, objects
-
-Functions & arrow functions
-
-Events and DOM interaction
-
-Async/await and fetch
-
-Modules (import/export)
+    Variables, data types, arrays, objects
+    
+    Functions & arrow functions
+    
+    Events and DOM interaction
+    
+    Async/await and fetch
+    
+    Modules (import/export)
 
 **Stack Overview**
 
@@ -70,7 +70,7 @@ Modules (import/export)
 
 - Virtual DOM
 
-JSX bridges JS + HTML
+- JSX bridges JS + HTML
 
 **_Next.js_**
 
