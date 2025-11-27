@@ -53,13 +53,13 @@ JavaScript powers behavior, state, and dynamic updates.
 Key concepts:
 
     Variables, data types, arrays, objects
-    
+
     Functions & arrow functions
-    
+
     Events and DOM interaction
-    
+
     Async/await and fetch
-    
+
     Modules (import/export)
 
 **Stack Overview**
